@@ -1,35 +1,52 @@
 export function formatRupiah(num: number): string {
-  return 'Rp' + num.toLocaleString('id-ID')
+  if (num >= 1_000_000_000) return `Rp${(num / 1_000_000_000).toFixed(1)}M`;
+  if (num >= 1_000_000) return `Rp${(num / 1_000_000).toFixed(1)}jt`;
+  if (num >= 1_000) return `Rp${(num / 1_000).toFixed(0)}rb`;
+  return `Rp${num.toLocaleString('id-ID')}`;
 }
 
 export function formatNumber(num: number): string {
-  if (num >= 1000000) return (num / 1000000).toFixed(1) + 'jt'
-  if (num >= 1000) return (num / 1000).toFixed(1) + 'rb'
-  return num.toString()
+  if (num >= 1_000_000) return `${(num / 1_000_000).toFixed(1)}M`;
+  if (num >= 1_000) return `${(num / 1_000).toFixed(1)}K`;
+  return num.toLocaleString('id-ID');
+}
+
+export function formatPercent(num: number): string {
+  const sign = num >= 0 ? '+' : '';
+  return `${sign}${num.toFixed(1)}%`;
+}
+
+export function getTierColor(tier: string): string {
+  switch (tier) {
+    case 'TIER_1': return 'text-yellow-400';
+    case 'TIER_2': return 'text-tiktok-blue';
+    case 'TIER_3': return 'text-tiktok-muted';
+    default: return 'text-tiktok-muted';
+  }
 }
 
 export function getScoreColor(score: number): string {
-  if (score >= 85) return 'text-green-400'
-  if (score >= 75) return 'text-orange-400'
-  if (score >= 65) return 'text-yellow-400'
-  return 'text-red-400'
+  if (score >= 85) return 'text-yellow-400';
+  if (score >= 75) return 'text-green-400';
+  if (score >= 65) return 'text-tiktok-blue';
+  return 'text-tiktok-muted';
 }
 
-export function getScoreBg(score: number): string {
-  if (score >= 85) return 'bg-green-500/20 border-green-500/30'
-  if (score >= 75) return 'bg-orange-500/20 border-orange-500/30'
-  if (score >= 65) return 'bg-yellow-500/20 border-yellow-500/30'
-  return 'bg-red-500/20 border-red-500/30'
+export function getVelocityColor(velocity: number): string {
+  if (velocity >= 100) return 'text-red-400';
+  if (velocity >= 50) return 'text-orange-400';
+  if (velocity >= 20) return 'text-green-400';
+  return 'text-tiktok-muted';
 }
 
-export function getFlagColor(flag: string): string {
-  const colors: Record<string, string> = {
-    'VIRAL_VELOCITY': 'bg-red-500/20 text-red-400 border-red-500/30',
-    'TRENDING_HASHTAG': 'bg-blue-500/20 text-blue-400 border-blue-500/30',
-    'SEASONAL_RAMADAN': 'bg-green-500/20 text-green-400 border-green-500/30',
-    'LOW_COMPETITION': 'bg-purple-500/20 text-purple-400 border-purple-500/30',
-    'LOW_RATING': 'bg-yellow-500/20 text-yellow-400 border-yellow-500/30',
-    'LOW_EARNINGS_PER_SALE': 'bg-orange-500/20 text-orange-400 border-orange-500/30',
-  }
-  return colors[flag] || 'bg-zinc-500/20 text-zinc-400 border-zinc-500/30'
+export function getFlagLabel(flag: string): string {
+  const labels: Record<string, string> = {
+    'VIRAL_VIDEO': 'Viral Video',
+    'TRENDING_HASHTAG': 'Trending',
+    'SEASONAL_FIT': 'Seasonal',
+    'LOW_COMPETITION': 'Low Comp',
+    'HIGH_COMMISSION': 'High Comm',
+    'RISING_STAR': 'Rising Star',
+  };
+  return labels[flag] || flag;
 }
