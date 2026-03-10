@@ -1,0 +1,8 @@
+[
+  {"slug": "muslim-fashion", "name": "Muslim Fashion", "productCount": 7, "avgScore": 77.3, "avgCommission": 13.5, "topProduct": "Gamis Bini Orang", "totalSold7d": 277000},
+  {"slug": "perhiasan-aksesoris", "name": "Perhiasan & Aksesoris", "productCount": 6, "avgScore": 74.7, "avgCommission": 15.5, "topProduct": "Gelang Titanium Korean Style", "totalSold7d": 113500},
+  {"slug": "aksesoris-ibadah", "name": "Aksesoris Ibadah", "productCount": 2, "avgScore": 80.0, "avgCommission": 13.8, "topProduct": "Tasbih Digital Mini", "totalSold7d": 128850},
+  {"slug": "sepatu-sandal", "name": "Sepatu & Sandal", "productCount": 3, "avgScore": 73.2, "avgCommission": 13.0, "topProduct": "Sandal Cinderella Glass Slipper", "totalSold7d": 42500},
+  {"slug": "tas-dompet", "name": "Tas & Dompet", "productCount": 3, "avgScore": 72.9, "avgCommission": 14.3, "topProduct": "Tas Selempang Korea Import", "totalSold7d": 48500},
+  {"slug": "dress-gaun", "name": "Dress & Gaun", "productCount": 4, "avgScore": 72.2, "avgCommission": 13.3, "topProduct": "Dress Brukat Kondangan", "totalSold7d": 57500}
+]
