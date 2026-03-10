@@ -1,108 +1,177 @@
-'use client'
-import { useState } from 'react'
-import { Product } from '@/lib/types'
-import { formatRupiah, formatNumber, getScoreColor, getFlagColor } from '@/lib/utils'
+'use client';
+import { useState } from 'react';
+import Link from 'next/link';
+import { ArrowUpDown, ArrowUp, ArrowDown, Bookmark, BookmarkCheck, GitCompare } from 'lucide-react';
+import type { Product, SortField, SortOrder, HistoryEntry } from '@/lib/types';
+import { formatRupiah, formatNumber, formatPercent, getScoreColor, getVelocityColor, getFlagLabel } from '@/lib/utils';
+import { SparklineChart } from './SparklineChart';
 
-type SortKey = 'rank' | 'score' | 'price' | 'commission' | 'orders7d' | 'velocityWoW' | 'creators'
+interface Props {
+  products: Product[];
+  history: HistoryEntry[];
+  isBookmarked: (id: string) => boolean;
+  onToggleBookmark: (product: Product) => void;
+  compareIds: string[];
+  onToggleCompare: (id: string) => void;
+}
 
-export default function ProductTable({ products }: { products: Product[] }) {
-  const [sortKey, setSortKey] = useState<SortKey>('rank')
-  const [sortAsc, setSortAsc] = useState(true)
-  const [filterCategory, setFilterCategory] = useState<string>('all')
+export function ProductTable({ products, history, isBookmarked, onToggleBookmark, compareIds, onToggleCompare }: Props) {
+  const [sortField, setSortField] = useState<SortField>('rank');
+  const [sortOrder, setSortOrder] = useState<SortOrder>('asc');
 
-  const categories = ['all', ...Array.from(new Set(products.map(p => p.category)))]
+  const handleSort = (field: SortField) => {
+    if (sortField === field) {
+      setSortOrder(sortOrder === 'asc' ? 'desc' : 'asc');
+    } else {
+      setSortField(field);
+      setSortOrder(field === 'rank' ? 'asc' : 'desc');
+    }
+  };
 
-  const filtered = filterCategory === 'all' ? products : products.filter(p => p.category === filterCategory)
-  const sorted = [...filtered].sort((a, b) => {
-    const diff = (a[sortKey] as number) - (b[sortKey] as number)
-    return sortAsc ? diff : -diff
-  })
+  const sorted = [...products].sort((a, b) => {
+    const aVal = a[sortField] as number;
+    const bVal = b[sortField] as number;
+    return sortOrder === 'asc' ? aVal - bVal : bVal - aVal;
+  });
 
-  const handleSort = (key: SortKey) => {
-    if (sortKey === key) setSortAsc(!sortAsc)
-    else { setSortKey(key); setSortAsc(key === 'rank') }
-  }
+  const SortIcon = ({ field }: { field: SortField }) => {
+    if (sortField !== field) return <ArrowUpDown size={12} className="text-tiktok-muted" />;
+    return sortOrder === 'asc' ? <ArrowUp size={12} className="text-tiktok-blue" /> : <ArrowDown size={12} className="text-tiktok-blue" />;
+  };
 
-  const SortHeader = ({ label, field }: { label: string; field: SortKey }) => (
-    <th
-      className={`px-3 py-3 text-left text-xs font-medium uppercase tracking-wider cursor-pointer hover:text-orange-400 transition-colors ${sortKey === field ? 'text-orange-400' : 'text-zinc-500'}`}
-      onClick={() => handleSort(field)}
-    >
-      {label} {sortKey === field ? (sortAsc ? '\u2191' : '\u2193') : ''}
-    </th>
-  )
+  const columns: { field: SortField; label: string; align?: string }[] = [
+    { field: 'rank', label: '#' },
+    { field: 'name', label: 'Produk' },
+    { field: 'price', label: 'Harga', align: 'right' },
+    { field: 'commissionRate', label: 'Komisi', align: 'right' },
+    { field: 'sold7d', label: 'Terjual 7h', align: 'right' },
+    { field: 'velocityWoW', label: 'Velocity', align: 'right' },
+    { field: 'affiliateScore', label: 'Skor', align: 'right' },
+  ];
 
   return (
-    <div className="bg-[#1e1e2e] border border-[#2e2e3e] rounded-xl overflow-hidden mb-8">
-      <div className="px-5 py-4 border-b border-[#2e2e3e] flex items-center justify-between flex-wrap gap-3">
-        <h2 className="text-lg font-bold text-white">Top 10 Produk Afiliasi</h2>
-        <div className="flex gap-2 flex-wrap">
-          {categories.map(cat => (
-            <button key={cat} onClick={() => setFilterCategory(cat)}
-              className={`px-3 py-1 rounded-full text-xs font-medium transition-colors ${filterCategory === cat ? 'bg-orange-500/20 text-orange-400 border border-orange-500/30' : 'bg-[#252540] text-zinc-400 border border-[#2e2e3e] hover:border-[#3e3e4e]'}`}
-            >
-              {cat === 'all' ? 'Semua' : cat}
-            </button>
-          ))}
-        </div>
-      </div>
+    <div className="bg-tiktok-card border border-tiktok-border rounded-xl overflow-hidden">
       <div className="overflow-x-auto">
         <table className="w-full">
-          <thead className="bg-[#181825]">
-            <tr>
-              <SortHeader label="#" field="rank" />
-              <th className="px-3 py-3 text-left text-xs font-medium text-zinc-500 uppercase tracking-wider">Produk</th>
-              <SortHeader label="Skor" field="score" />
-              <SortHeader label="Harga" field="price" />
-              <SortHeader label="Komisi" field="commission" />
-              <SortHeader label="Order/7d" field="orders7d" />
-              <SortHeader label="Velocity" field="velocityWoW" />
-              <SortHeader label="Kreator" field="creators" />
-              <th className="px-3 py-3 text-left text-xs font-medium text-zinc-500 uppercase tracking-wider">Flags</th>
+          <thead>
+            <tr className="border-b border-tiktok-border">
+              <th className="px-3 py-3 text-left w-10">
+                <GitCompare size={14} className="text-tiktok-muted" />
+              </th>
+              {columns.map(col => (
+                <th
+                  key={col.field}
+                  onClick={() => handleSort(col.field)}
+                  className={`px-3 py-3 text-xs font-medium text-tiktok-muted cursor-pointer hover:text-tiktok-text transition-colors ${col.align === 'right' ? 'text-right' : 'text-left'}`}
+                >
+                  <span className="inline-flex items-center gap-1">
+                    {col.label}
+                    <SortIcon field={col.field} />
+                  </span>
+                </th>
+              ))}
+              <th className="px-3 py-3 text-center text-xs font-medium text-tiktok-muted">Trend</th>
+              <th className="px-3 py-3 w-10"></th>
             </tr>
           </thead>
-          <tbody className="divide-y divide-[#2e2e3e]">
-            {sorted.map(product => (
-              <tr key={product.id} className="hover:bg-[#252540] transition-colors cursor-pointer" onClick={() => window.location.href = `/product/${product.id}`}>
-                <td className="px-3 py-4 text-sm font-bold text-zinc-300">#{product.rank}</td>
-                <td className="px-3 py-4">
-                  <div className="text-sm font-medium text-white max-w-[200px] truncate">{product.name}</div>
-                  <div className="text-xs text-zinc-500">{product.store} \u00b7 {product.category}</div>
-                </td>
-                <td className="px-3 py-4">
-                  <span className={`text-sm font-bold ${getScoreColor(product.score)}`}>{product.score}</span>
-                </td>
-                <td className="px-3 py-4 text-sm text-zinc-300">{formatRupiah(product.price)}</td>
-                <td className="px-3 py-4">
-                  <div className="text-sm text-green-400 font-medium">{product.commission}%</div>
-                  <div className="text-xs text-zinc-500">{formatRupiah(product.commissionIdr)}/sale</div>
-                </td>
-                <td className="px-3 py-4 text-sm text-zinc-300">{formatNumber(product.orders7d)}</td>
-                <td className="px-3 py-4">
-                  <span className={`text-sm font-medium ${product.velocityWoW > 100 ? 'text-red-400' : product.velocityWoW > 50 ? 'text-orange-400' : 'text-zinc-400'}`}>
-                    +{product.velocityWoW}%
-                  </span>
-                </td>
-                <td className="px-3 py-4 text-sm text-zinc-300">{product.creators}</td>
-                <td className="px-3 py-4">
-                  <div className="flex gap-1 flex-wrap max-w-[200px]">
-                    {product.flags.slice(0, 2).map(flag => (
-                      <span key={flag} className={`px-2 py-0.5 text-[10px] font-medium rounded-full border ${getFlagColor(flag)}`}>
-                        {flag.replace(/_/g, ' ')}
-                      </span>
-                    ))}
-                    {product.redFlags.map(flag => (
-                      <span key={flag} className={`px-2 py-0.5 text-[10px] font-medium rounded-full border ${getFlagColor(flag)}`}>
-                        \u26a0 {flag.replace(/_/g, ' ')}
-                      </span>
-                    ))}
-                  </div>
-                </td>
-              </tr>
-            ))}
+          <tbody>
+            {sorted.map((product) => {
+              const productHistory = history.filter(h => h.productId === product.id).sort((a, b) => a.date.localeCompare(b.date));
+              return (
+                <tr key={product.id} className="border-b border-tiktok-border/50 hover:bg-white/[0.02] transition-colors">
+                  {/* Compare checkbox */}
+                  <td className="px-3 py-3">
+                    <button
+                      onClick={() => onToggleCompare(product.id)}
+                      disabled={!compareIds.includes(product.id) && compareIds.length >= 3}
+                      className={`w-5 h-5 rounded border flex items-center justify-center transition-colors ${
+                        compareIds.includes(product.id)
+                          ? 'bg-tiktok-blue border-tiktok-blue text-black'
+                          : 'border-tiktok-border hover:border-tiktok-muted disabled:opacity-30'
+                      }`}
+                    >
+                      {compareIds.includes(product.id) && <span className="text-xs font-bold">{compareIds.indexOf(product.id) + 1}</span>}
+                    </button>
+                  </td>
+
+                  {/* Rank */}
+                  <td className="px-3 py-3">
+                    <span className={`text-sm font-bold ${product.rank <= 3 ? 'text-tiktok-red' : 'text-tiktok-muted'}`}>
+                      {product.rank}
+                    </span>
+                  </td>
+
+                  {/* Product name + flags */}
+                  <td className="px-3 py-3 max-w-[300px]">
+                    <Link href={`/product/${product.id}`} className="group">
+                      <p className="text-sm font-medium text-tiktok-text group-hover:text-tiktok-blue transition-colors truncate">
+                        {product.name}
+                      </p>
+                      <p className="text-xs text-tiktok-muted">{product.shopName}</p>
+                      <div className="flex flex-wrap gap-1 mt-1">
+                        {product.flags.slice(0, 3).map(flag => (
+                          <span key={flag} className={`flag-badge flag-${flag}`}>{getFlagLabel(flag)}</span>
+                        ))}
+                      </div>
+                    </Link>
+                  </td>
+
+                  {/* Price */}
+                  <td className="px-3 py-3 text-right">
+                    <span className="text-sm text-tiktok-text">{formatRupiah(product.price)}</span>
+                  </td>
+
+                  {/* Commission */}
+                  <td className="px-3 py-3 text-right">
+                    <span className="text-sm text-purple-400">{product.commissionRate}%</span>
+                    <p className="text-xs text-tiktok-muted">{formatRupiah(product.commission)}/pcs</p>
+                  </td>
+
+                  {/* Sold 7d */}
+                  <td className="px-3 py-3 text-right">
+                    <span className="text-sm text-tiktok-text">{formatNumber(product.sold7d)}</span>
+                  </td>
+
+                  {/* Velocity */}
+                  <td className="px-3 py-3 text-right">
+                    <span className={`text-sm font-medium ${getVelocityColor(product.velocityWoW)}`}>
+                      {formatPercent(product.velocityWoW)}
+                    </span>
+                  </td>
+
+                  {/* Score */}
+                  <td className="px-3 py-3 text-right">
+                    <span className={`text-sm font-bold ${getScoreColor(product.affiliateScore)}`}>
+                      {product.affiliateScore}
+                    </span>
+                  </td>
+
+                  {/* Sparkline */}
+                  <td className="px-3 py-3">
+                    <div className="w-20 h-8">
+                      <SparklineChart data={productHistory.map(h => h.sold7d)} />
+                    </div>
+                  </td>
+
+                  {/* Bookmark */}
+                  <td className="px-3 py-3">
+                    <button
+                      onClick={() => onToggleBookmark(product)}
+                      className="p-1 hover:bg-white/5 rounded transition-colors"
+                    >
+                      {isBookmarked(product.id) ? (
+                        <BookmarkCheck size={16} className="text-tiktok-red" />
+                      ) : (
+                        <Bookmark size={16} className="text-tiktok-muted hover:text-tiktok-text" />
+                      )}
+                    </button>
+                  </td>
+                </tr>
+              );
+            })}
           </tbody>
         </table>
       </div>
     </div>
-  )
+  );
 }
