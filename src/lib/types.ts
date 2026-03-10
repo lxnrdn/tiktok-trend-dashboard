@@ -1,71 +1,89 @@
+// Product data types for TikTok Trend Dashboard
+
 export interface Product {
-  id: number
-  rank: number
-  name: string
-  price: number
-  commission: number
-  commissionIdr: number
-  score: number
-  tier: string
-  tierLabel: string
-  orders7d: number
-  orders30d: number
-  rating: number
-  reviews: number
-  creators: number
-  velocityWoW: number
-  store: string
-  category: string
-  flags: string[]
-  redFlags: string[]
-  analysis: string
-  earningsEstimate: string
-  scoreDimensions: {
-    salesVolume: number
-    commissionRate: number
-    salesVelocity: number
-    creatorCompetition: number
-    productQuality: number
-  }
-  contentStrategy: {
-    hooks: string[]
-    formats: string[]
-    hashtags: string[]
-    bestTimes: string[]
-  } | null
+  id: string;
+  rank: number;
+  name: string;
+  price: number;
+  priceMax?: number;
+  commission: number;
+  commissionRate: number;
+  sold7d: number;
+  sold30d: number;
+  rating: number;
+  reviewCount: number;
+  creatorCount: number;
+  velocityWoW: number;
+  affiliateScore: number;
+  tier: 'TIER_1' | 'TIER_2' | 'TIER_3';
+  shopName: string;
+  category: string;
+  categorySlug: string;
+  flags: string[];
+  imageUrl?: string;
+  tiktokUrl?: string;
+  whyPromote: string;
+  scoreBreakdown: ScoreBreakdown;
+}
+
+export interface ScoreBreakdown {
+  volume: number;      // 0-25
+  commission: number;  // 0-25
+  growth: number;      // 0-25
+  competition: number; // 0-25
+}
+
+export interface HistoryEntry {
+  date: string; // YYYY-MM-DD
+  productId: string;
+  sold7d: number;
+  velocityWoW: number;
+  affiliateScore: number;
+  price: number;
 }
 
 export interface Category {
-  name: string
-  label: string
-  orders7d: number
-  trending: string[]
-  driver: string
-  recommendation: string
-  color: string
+  slug: string;
+  name: string;
+  productCount: number;
+  avgScore: number;
+  avgCommission: number;
+  topProduct: string;
+  totalSold7d: number;
 }
 
-export interface RisingStar {
-  rank: number
-  name: string
-  velocityWoW: number
-  price: number
-  category: string
+export interface Creator {
+  id: string;
+  name: string;
+  handle: string;
+  followers: number;
+  totalLikes: number;
+  productsPromoted: number;
+  avgCommission: number;
+  topCategory: string;
+  profileUrl: string;
+  isVerified: boolean;
 }
 
-export interface ReportData {
-  meta: {
-    date: string
-    title: string
-    totalProducts: number
-    hottestCategory: string
-    avgScore: number
-    topCommissionProduct: string
-    topCommissionRate: number
-    marketGMV: string
-    growthYoY: string
-  }
-  products: Product[]
-  categories: Category[]
-  risingStars: RisingStar[]
+export interface DashboardMeta {
+  lastUpdated: string;
+  totalProductsScanned: number;
+  dataSource: string;
+  marketScore: number;
+  marketSentiment: string;
+  reportDate: string;
+}
+
+export type SortField = 'rank' | 'name' | 'price' | 'commission' | 'commissionRate' | 'sold7d' | 'velocityWoW' | 'affiliateScore' | 'creatorCount' | 'rating';
+export type SortOrder = 'asc' | 'desc';
+
+export interface FilterState {
+  search: string;
+  category: string;
+  priceMin: number;
+  priceMax: number;
+  commissionMin: number;
+  commissionMax: number;
+  scoreMin: number;
+  flags: string[];
 }
