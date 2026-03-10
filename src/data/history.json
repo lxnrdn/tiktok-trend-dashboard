@@ -1,0 +1,1402 @@
+[
+  {
+    "date": "2026-03-05",
+    "productId": "prod_001",
+    "sold7d": 21500,
+    "velocityWoW": 56.5,
+    "affiliateScore": 75.9,
+    "price": 159000
+  },
+  {
+    "date": "2026-03-05",
+    "productId": "prod_002",
+    "sold7d": 57500,
+    "velocityWoW": 50.7,
+    "affiliateScore": 73.5,
+    "price": 3191
+  },
+  {
+    "date": "2026-03-05",
+    "productId": "prod_003",
+    "sold7d": 18000,
+    "velocityWoW": 6.6,
+    "affiliateScore": 72.2,
+    "price": 12000
+  },
+  {
+    "date": "2026-03-05",
+    "productId": "prod_004",
+    "sold7d": 28000,
+    "velocityWoW": 58.3,
+    "affiliateScore": 77.7,
+    "price": 185000
+  },
+  {
+    "date": "2026-03-05",
+    "productId": "prod_005",
+    "sold7d": 13000,
+    "velocityWoW": 68.7,
+    "affiliateScore": 69.9,
+    "price": 45000
+  },
+  {
+    "date": "2026-03-05",
+    "productId": "prod_006",
+    "sold7d": 34500,
+    "velocityWoW": 37.2,
+    "affiliateScore": 74.5,
+    "price": 25000
+  },
+  {
+    "date": "2026-03-05",
+    "productId": "prod_007",
+    "sold7d": 13000,
+    "velocityWoW": 18.6,
+    "affiliateScore": 71.6,
+    "price": 35000
+  },
+  {
+    "date": "2026-03-05",
+    "productId": "prod_008",
+    "sold7d": 17500,
+    "velocityWoW": 37.6,
+    "affiliateScore": 72.1,
+    "price": 89000
+  },
+  {
+    "date": "2026-03-05",
+    "productId": "prod_009",
+    "sold7d": 12000,
+    "velocityWoW": 19.5,
+    "affiliateScore": 71.5,
+    "price": 15000
+  },
+  {
+    "date": "2026-03-05",
+    "productId": "prod_010",
+    "sold7d": 29000,
+    "velocityWoW": 28.8,
+    "affiliateScore": 72.9,
+    "price": 42000
+  },
+  {
+    "date": "2026-03-05",
+    "productId": "prod_011",
+    "sold7d": 10000,
+    "velocityWoW": 12.2,
+    "affiliateScore": 68.6,
+    "price": 18000
+  },
+  {
+    "date": "2026-03-05",
+    "productId": "prod_012",
+    "sold7d": 8000,
+    "velocityWoW": 29.5,
+    "affiliateScore": 65.6,
+    "price": 175000
+  },
+  {
+    "date": "2026-03-05",
+    "productId": "prod_013",
+    "sold7d": 8500,
+    "velocityWoW": 7.2,
+    "affiliateScore": 67.0,
+    "price": 22000
+  },
+  {
+    "date": "2026-03-05",
+    "productId": "prod_014",
+    "sold7d": 14000,
+    "velocityWoW": 22.5,
+    "affiliateScore": 67.7,
+    "price": 55000
+  },
+  {
+    "date": "2026-03-05",
+    "productId": "prod_015",
+    "sold7d": 12000,
+    "velocityWoW": 18.5,
+    "affiliateScore": 65.9,
+    "price": 28000
+  },
+  {
+    "date": "2026-03-05",
+    "productId": "prod_016",
+    "sold7d": 24500,
+    "velocityWoW": 19.2,
+    "affiliateScore": 67.0,
+    "price": 39000
+  },
+  {
+    "date": "2026-03-05",
+    "productId": "prod_017",
+    "sold7d": 39000,
+    "velocityWoW": 13.4,
+    "affiliateScore": 67.4,
+    "price": 8500
+  },
+  {
+    "date": "2026-03-05",
+    "productId": "prod_018",
+    "sold7d": 7000,
+    "velocityWoW": 30.4,
+    "affiliateScore": 65.3,
+    "price": 52000
+  },
+  {
+    "date": "2026-03-05",
+    "productId": "prod_019",
+    "sold7d": 9000,
+    "velocityWoW": 13.6,
+    "affiliateScore": 65.7,
+    "price": 19000
+  },
+  {
+    "date": "2026-03-05",
+    "productId": "prod_020",
+    "sold7d": 6500,
+    "velocityWoW": 34.7,
+    "affiliateScore": 65.0,
+    "price": 42000
+  },
+  {
+    "date": "2026-03-05",
+    "productId": "prod_021",
+    "sold7d": 41500,
+    "velocityWoW": 21.7,
+    "affiliateScore": 66.5,
+    "price": 5500
+  },
+  {
+    "date": "2026-03-05",
+    "productId": "prod_022",
+    "sold7d": 3500,
+    "velocityWoW": 51.8,
+    "affiliateScore": 62.4,
+    "price": 125000
+  },
+  {
+    "date": "2026-03-05",
+    "productId": "prod_023",
+    "sold7d": 9000,
+    "velocityWoW": 10.8,
+    "affiliateScore": 66.9,
+    "price": 25000
+  },
+  {
+    "date": "2026-03-05",
+    "productId": "prod_024",
+    "sold7d": 16500,
+    "velocityWoW": 29.0,
+    "affiliateScore": 68.0,
+    "price": 45000
+  },
+  {
+    "date": "2026-03-05",
+    "productId": "prod_025",
+    "sold7d": 8000,
+    "velocityWoW": 19.2,
+    "affiliateScore": 67.2,
+    "price": 38000
+  },
+  {
+    "date": "2026-03-06",
+    "productId": "prod_001",
+    "sold7d": 25000,
+    "velocityWoW": 90.6,
+    "affiliateScore": 76.9,
+    "price": 159000
+  },
+  {
+    "date": "2026-03-06",
+    "productId": "prod_002",
+    "sold7d": 62000,
+    "velocityWoW": 57.3,
+    "affiliateScore": 74.8,
+    "price": 3191
+  },
+  {
+    "date": "2026-03-06",
+    "productId": "prod_003",
+    "sold7d": 20000,
+    "velocityWoW": 8.3,
+    "affiliateScore": 72.9,
+    "price": 12000
+  },
+  {
+    "date": "2026-03-06",
+    "productId": "prod_004",
+    "sold7d": 32000,
+    "velocityWoW": 89.0,
+    "affiliateScore": 78.5,
+    "price": 185000
+  },
+  {
+    "date": "2026-03-06",
+    "productId": "prod_005",
+    "sold7d": 15000,
+    "velocityWoW": 85.6,
+    "affiliateScore": 71.6,
+    "price": 45000
+  },
+  {
+    "date": "2026-03-06",
+    "productId": "prod_006",
+    "sold7d": 39500,
+    "velocityWoW": 40.7,
+    "affiliateScore": 75.2,
+    "price": 25000
+  },
+  {
+    "date": "2026-03-06",
+    "productId": "prod_007",
+    "sold7d": 15500,
+    "velocityWoW": 23.3,
+    "affiliateScore": 72.0,
+    "price": 35000
+  },
+  {
+    "date": "2026-03-06",
+    "productId": "prod_008",
+    "sold7d": 22000,
+    "velocityWoW": 60.6,
+    "affiliateScore": 73.6,
+    "price": 89000
+  },
+  {
+    "date": "2026-03-06",
+    "productId": "prod_009",
+    "sold7d": 13500,
+    "velocityWoW": 23.3,
+    "affiliateScore": 71.7,
+    "price": 15000
+  },
+  {
+    "date": "2026-03-06",
+    "productId": "prod_010",
+    "sold7d": 31500,
+    "velocityWoW": 44.9,
+    "affiliateScore": 73.5,
+    "price": 42000
+  },
+  {
+    "date": "2026-03-06",
+    "productId": "prod_011",
+    "sold7d": 11500,
+    "velocityWoW": 16.5,
+    "affiliateScore": 69.4,
+    "price": 18000
+  },
+  {
+    "date": "2026-03-06",
+    "productId": "prod_012",
+    "sold7d": 9000,
+    "velocityWoW": 30.8,
+    "affiliateScore": 67.2,
+    "price": 175000
+  },
+  {
+    "date": "2026-03-06",
+    "productId": "prod_013",
+    "sold7d": 9500,
+    "velocityWoW": 11.2,
+    "affiliateScore": 68.0,
+    "price": 22000
+  },
+  {
+    "date": "2026-03-06",
+    "productId": "prod_014",
+    "sold7d": 17500,
+    "velocityWoW": 26.7,
+    "affiliateScore": 68.8,
+    "price": 55000
+  },
+  {
+    "date": "2026-03-06",
+    "productId": "prod_015",
+    "sold7d": 13500,
+    "velocityWoW": 26.6,
+    "affiliateScore": 68.0,
+    "price": 28000
+  },
+  {
+    "date": "2026-03-06",
+    "productId": "prod_016",
+    "sold7d": 28500,
+    "velocityWoW": 26.3,
+    "affiliateScore": 68.1,
+    "price": 39000
+  },
+  {
+    "date": "2026-03-06",
+    "productId": "prod_017",
+    "sold7d": 44500,
+    "velocityWoW": 16.6,
+    "affiliateScore": 68.7,
+    "price": 8500
+  },
+  {
+    "date": "2026-03-06",
+    "productId": "prod_018",
+    "sold7d": 8000,
+    "velocityWoW": 51.0,
+    "affiliateScore": 66.7,
+    "price": 52000
+  },
+  {
+    "date": "2026-03-06",
+    "productId": "prod_019",
+    "sold7d": 10000,
+    "velocityWoW": 15.9,
+    "affiliateScore": 67.3,
+    "price": 19000
+  },
+  {
+    "date": "2026-03-06",
+    "productId": "prod_020",
+    "sold7d": 7000,
+    "velocityWoW": 50.9,
+    "affiliateScore": 66.2,
+    "price": 42000
+  },
+  {
+    "date": "2026-03-06",
+    "productId": "prod_021",
+    "sold7d": 50000,
+    "velocityWoW": 26.5,
+    "affiliateScore": 67.8,
+    "price": 5500
+  },
+  {
+    "date": "2026-03-06",
+    "productId": "prod_022",
+    "sold7d": 4000,
+    "velocityWoW": 74.4,
+    "affiliateScore": 64.0,
+    "price": 125000
+  },
+  {
+    "date": "2026-03-06",
+    "productId": "prod_023",
+    "sold7d": 11000,
+    "velocityWoW": 17.1,
+    "affiliateScore": 68.1,
+    "price": 25000
+  },
+  {
+    "date": "2026-03-06",
+    "productId": "prod_024",
+    "sold7d": 19500,
+    "velocityWoW": 43.3,
+    "affiliateScore": 69.0,
+    "price": 45000
+  },
+  {
+    "date": "2026-03-06",
+    "productId": "prod_025",
+    "sold7d": 9500,
+    "velocityWoW": 26.1,
+    "affiliateScore": 67.6,
+    "price": 38000
+  },
+  {
+    "date": "2026-03-07",
+    "productId": "prod_001",
+    "sold7d": 27000,
+    "velocityWoW": 116.6,
+    "affiliateScore": 77.0,
+    "price": 159000
+  },
+  {
+    "date": "2026-03-07",
+    "productId": "prod_002",
+    "sold7d": 67000,
+    "velocityWoW": 70.1,
+    "affiliateScore": 76.0,
+    "price": 3191
+  },
+  {
+    "date": "2026-03-07",
+    "productId": "prod_003",
+    "sold7d": 21500,
+    "velocityWoW": 10.9,
+    "affiliateScore": 73.9,
+    "price": 12000
+  },
+  {
+    "date": "2026-03-07",
+    "productId": "prod_004",
+    "sold7d": 34000,
+    "velocityWoW": 110.7,
+    "affiliateScore": 79.7,
+    "price": 185000
+  },
+  {
+    "date": "2026-03-07",
+    "productId": "prod_005",
+    "sold7d": 15500,
+    "velocityWoW": 114.6,
+    "affiliateScore": 72.6,
+    "price": 45000
+  },
+  {
+    "date": "2026-03-07",
+    "productId": "prod_006",
+    "sold7d": 42000,
+    "velocityWoW": 43.7,
+    "affiliateScore": 75.3,
+    "price": 25000
+  },
+  {
+    "date": "2026-03-07",
+    "productId": "prod_007",
+    "sold7d": 17500,
+    "velocityWoW": 28.8,
+    "affiliateScore": 73.3,
+    "price": 35000
+  },
+  {
+    "date": "2026-03-07",
+    "productId": "prod_008",
+    "sold7d": 23500,
+    "velocityWoW": 75.9,
+    "affiliateScore": 73.9,
+    "price": 89000
+  },
+  {
+    "date": "2026-03-07",
+    "productId": "prod_009",
+    "sold7d": 15000,
+    "velocityWoW": 22.4,
+    "affiliateScore": 73.1,
+    "price": 15000
+  },
+  {
+    "date": "2026-03-07",
+    "productId": "prod_010",
+    "sold7d": 35000,
+    "velocityWoW": 60.6,
+    "affiliateScore": 74.5,
+    "price": 42000
+  },
+  {
+    "date": "2026-03-07",
+    "productId": "prod_011",
+    "sold7d": 13000,
+    "velocityWoW": 21.1,
+    "affiliateScore": 70.8,
+    "price": 18000
+  },
+  {
+    "date": "2026-03-07",
+    "productId": "prod_012",
+    "sold7d": 10000,
+    "velocityWoW": 35.9,
+    "affiliateScore": 68.0,
+    "price": 175000
+  },
+  {
+    "date": "2026-03-07",
+    "productId": "prod_013",
+    "sold7d": 11000,
+    "velocityWoW": 16.3,
+    "affiliateScore": 69.3,
+    "price": 22000
+  },
+  {
+    "date": "2026-03-07",
+    "productId": "prod_014",
+    "sold7d": 19500,
+    "velocityWoW": 30.5,
+    "affiliateScore": 69.5,
+    "price": 55000
+  },
+  {
+    "date": "2026-03-07",
+    "productId": "prod_015",
+    "sold7d": 15000,
+    "velocityWoW": 26.6,
+    "affiliateScore": 68.5,
+    "price": 28000
+  },
+  {
+    "date": "2026-03-07",
+    "productId": "prod_016",
+    "sold7d": 30500,
+    "velocityWoW": 34.3,
+    "affiliateScore": 69.7,
+    "price": 39000
+  },
+  {
+    "date": "2026-03-07",
+    "productId": "prod_017",
+    "sold7d": 50000,
+    "velocityWoW": 22.1,
+    "affiliateScore": 70.1,
+    "price": 8500
+  },
+  {
+    "date": "2026-03-07",
+    "productId": "prod_018",
+    "sold7d": 9000,
+    "velocityWoW": 50.1,
+    "affiliateScore": 67.0,
+    "price": 52000
+  },
+  {
+    "date": "2026-03-07",
+    "productId": "prod_019",
+    "sold7d": 11000,
+    "velocityWoW": 19.6,
+    "affiliateScore": 68.4,
+    "price": 19000
+  },
+  {
+    "date": "2026-03-07",
+    "productId": "prod_020",
+    "sold7d": 7500,
+    "velocityWoW": 67.0,
+    "affiliateScore": 67.6,
+    "price": 42000
+  },
+  {
+    "date": "2026-03-07",
+    "productId": "prod_021",
+    "sold7d": 56500,
+    "velocityWoW": 31.3,
+    "affiliateScore": 68.4,
+    "price": 5500
+  },
+  {
+    "date": "2026-03-07",
+    "productId": "prod_022",
+    "sold7d": 5000,
+    "velocityWoW": 85.8,
+    "affiliateScore": 65.4,
+    "price": 125000
+  },
+  {
+    "date": "2026-03-07",
+    "productId": "prod_023",
+    "sold7d": 12500,
+    "velocityWoW": 17.6,
+    "affiliateScore": 68.4,
+    "price": 25000
+  },
+  {
+    "date": "2026-03-07",
+    "productId": "prod_024",
+    "sold7d": 21000,
+    "velocityWoW": 49.2,
+    "affiliateScore": 69.8,
+    "price": 45000
+  },
+  {
+    "date": "2026-03-07",
+    "productId": "prod_025",
+    "sold7d": 10500,
+    "velocityWoW": 30.4,
+    "affiliateScore": 68.9,
+    "price": 38000
+  },
+  {
+    "date": "2026-03-08",
+    "productId": "prod_001",
+    "sold7d": 30000,
+    "velocityWoW": 119.0,
+    "affiliateScore": 78.6,
+    "price": 159000
+  },
+  {
+    "date": "2026-03-08",
+    "productId": "prod_002",
+    "sold7d": 74500,
+    "velocityWoW": 83.1,
+    "affiliateScore": 77.0,
+    "price": 3191
+  },
+  {
+    "date": "2026-03-08",
+    "productId": "prod_003",
+    "sold7d": 23500,
+    "velocityWoW": 14.4,
+    "affiliateScore": 75.4,
+    "price": 12000
+  },
+  {
+    "date": "2026-03-08",
+    "productId": "prod_004",
+    "sold7d": 37500,
+    "velocityWoW": 111.5,
+    "affiliateScore": 80.6,
+    "price": 185000
+  },
+  {
+    "date": "2026-03-08",
+    "productId": "prod_005",
+    "sold7d": 15500,
+    "velocityWoW": 132.1,
+    "affiliateScore": 73.0,
+    "price": 45000
+  },
+  {
+    "date": "2026-03-08",
+    "productId": "prod_006",
+    "sold7d": 43000,
+    "velocityWoW": 56.9,
+    "affiliateScore": 76.3,
+    "price": 25000
+  },
+  {
+    "date": "2026-03-08",
+    "productId": "prod_007",
+    "sold7d": 18000,
+    "velocityWoW": 33.6,
+    "affiliateScore": 74.0,
+    "price": 35000
+  },
+  {
+    "date": "2026-03-08",
+    "productId": "prod_008",
+    "sold7d": 25500,
+    "velocityWoW": 93.2,
+    "affiliateScore": 74.8,
+    "price": 89000
+  },
+  {
+    "date": "2026-03-08",
+    "productId": "prod_009",
+    "sold7d": 16000,
+    "velocityWoW": 26.3,
+    "affiliateScore": 73.7,
+    "price": 15000
+  },
+  {
+    "date": "2026-03-08",
+    "productId": "prod_010",
+    "sold7d": 39000,
+    "velocityWoW": 60.0,
+    "affiliateScore": 76.3,
+    "price": 42000
+  },
+  {
+    "date": "2026-03-08",
+    "productId": "prod_011",
+    "sold7d": 13500,
+    "velocityWoW": 20.4,
+    "affiliateScore": 71.4,
+    "price": 18000
+  },
+  {
+    "date": "2026-03-08",
+    "productId": "prod_012",
+    "sold7d": 10500,
+    "velocityWoW": 40.2,
+    "affiliateScore": 69.4,
+    "price": 175000
+  },
+  {
+    "date": "2026-03-08",
+    "productId": "prod_013",
+    "sold7d": 12000,
+    "velocityWoW": 18.4,
+    "affiliateScore": 70.0,
+    "price": 22000
+  },
+  {
+    "date": "2026-03-08",
+    "productId": "prod_014",
+    "sold7d": 20500,
+    "velocityWoW": 28.0,
+    "affiliateScore": 71.2,
+    "price": 55000
+  },
+  {
+    "date": "2026-03-08",
+    "productId": "prod_015",
+    "sold7d": 17000,
+    "velocityWoW": 33.0,
+    "affiliateScore": 70.6,
+    "price": 28000
+  },
+  {
+    "date": "2026-03-08",
+    "productId": "prod_016",
+    "sold7d": 32000,
+    "velocityWoW": 40.0,
+    "affiliateScore": 70.7,
+    "price": 39000
+  },
+  {
+    "date": "2026-03-08",
+    "productId": "prod_017",
+    "sold7d": 56000,
+    "velocityWoW": 26.2,
+    "affiliateScore": 70.9,
+    "price": 8500
+  },
+  {
+    "date": "2026-03-08",
+    "productId": "prod_018",
+    "sold7d": 9500,
+    "velocityWoW": 63.0,
+    "affiliateScore": 68.8,
+    "price": 52000
+  },
+  {
+    "date": "2026-03-08",
+    "productId": "prod_019",
+    "sold7d": 12000,
+    "velocityWoW": 21.4,
+    "affiliateScore": 69.3,
+    "price": 19000
+  },
+  {
+    "date": "2026-03-08",
+    "productId": "prod_020",
+    "sold7d": 8000,
+    "velocityWoW": 75.1,
+    "affiliateScore": 68.3,
+    "price": 42000
+  },
+  {
+    "date": "2026-03-08",
+    "productId": "prod_021",
+    "sold7d": 61500,
+    "velocityWoW": 37.1,
+    "affiliateScore": 69.8,
+    "price": 5500
+  },
+  {
+    "date": "2026-03-08",
+    "productId": "prod_022",
+    "sold7d": 5000,
+    "velocityWoW": 84.1,
+    "affiliateScore": 66.7,
+    "price": 125000
+  },
+  {
+    "date": "2026-03-08",
+    "productId": "prod_023",
+    "sold7d": 14000,
+    "velocityWoW": 23.9,
+    "affiliateScore": 69.6,
+    "price": 25000
+  },
+  {
+    "date": "2026-03-08",
+    "productId": "prod_024",
+    "sold7d": 22000,
+    "velocityWoW": 62.1,
+    "affiliateScore": 71.2,
+    "price": 45000
+  },
+  {
+    "date": "2026-03-08",
+    "productId": "prod_025",
+    "sold7d": 11000,
+    "velocityWoW": 31.9,
+    "affiliateScore": 69.6,
+    "price": 38000
+  },
+  {
+    "date": "2026-03-09",
+    "productId": "prod_001",
+    "sold7d": 32000,
+    "velocityWoW": 137.6,
+    "affiliateScore": 79.3,
+    "price": 159000
+  },
+  {
+    "date": "2026-03-09",
+    "productId": "prod_002",
+    "sold7d": 77500,
+    "velocityWoW": 87.5,
+    "affiliateScore": 78.3,
+    "price": 3191
+  },
+  {
+    "date": "2026-03-09",
+    "productId": "prod_003",
+    "sold7d": 26000,
+    "velocityWoW": 15.0,
+    "affiliateScore": 76.6,
+    "price": 12000
+  },
+  {
+    "date": "2026-03-09",
+    "productId": "prod_004",
+    "sold7d": 38000,
+    "velocityWoW": 118.4,
+    "affiliateScore": 81.0,
+    "price": 185000
+  },
+  {
+    "date": "2026-03-09",
+    "productId": "prod_005",
+    "sold7d": 17000,
+    "velocityWoW": 161.6,
+    "affiliateScore": 74.3,
+    "price": 45000
+  },
+  {
+    "date": "2026-03-09",
+    "productId": "prod_006",
+    "sold7d": 46500,
+    "velocityWoW": 61.9,
+    "affiliateScore": 77.1,
+    "price": 25000
+  },
+  {
+    "date": "2026-03-09",
+    "productId": "prod_007",
+    "sold7d": 19500,
+    "velocityWoW": 39.1,
+    "affiliateScore": 73.9,
+    "price": 35000
+  },
+  {
+    "date": "2026-03-09",
+    "productId": "prod_008",
+    "sold7d": 28000,
+    "velocityWoW": 103.3,
+    "affiliateScore": 76.0,
+    "price": 89000
+  },
+  {
+    "date": "2026-03-09",
+    "productId": "prod_009",
+    "sold7d": 16500,
+    "velocityWoW": 26.9,
+    "affiliateScore": 74.6,
+    "price": 15000
+  },
+  {
+    "date": "2026-03-09",
+    "productId": "prod_010",
+    "sold7d": 40500,
+    "velocityWoW": 79.6,
+    "affiliateScore": 76.7,
+    "price": 42000
+  },
+  {
+    "date": "2026-03-09",
+    "productId": "prod_011",
+    "sold7d": 15000,
+    "velocityWoW": 24.1,
+    "affiliateScore": 72.1,
+    "price": 18000
+  },
+  {
+    "date": "2026-03-09",
+    "productId": "prod_012",
+    "sold7d": 10500,
+    "velocityWoW": 48.2,
+    "affiliateScore": 70.9,
+    "price": 175000
+  },
+  {
+    "date": "2026-03-09",
+    "productId": "prod_013",
+    "sold7d": 12500,
+    "velocityWoW": 18.9,
+    "affiliateScore": 70.8,
+    "price": 22000
+  },
+  {
+    "date": "2026-03-09",
+    "productId": "prod_014",
+    "sold7d": 22500,
+    "velocityWoW": 34.9,
+    "affiliateScore": 71.7,
+    "price": 55000
+  },
+  {
+    "date": "2026-03-09",
+    "productId": "prod_015",
+    "sold7d": 17500,
+    "velocityWoW": 34.9,
+    "affiliateScore": 71.2,
+    "price": 28000
+  },
+  {
+    "date": "2026-03-09",
+    "productId": "prod_016",
+    "sold7d": 34500,
+    "velocityWoW": 44.4,
+    "affiliateScore": 71.4,
+    "price": 39000
+  },
+  {
+    "date": "2026-03-09",
+    "productId": "prod_017",
+    "sold7d": 58500,
+    "velocityWoW": 30.0,
+    "affiliateScore": 71.2,
+    "price": 8500
+  },
+  {
+    "date": "2026-03-09",
+    "productId": "prod_018",
+    "sold7d": 9500,
+    "velocityWoW": 73.3,
+    "affiliateScore": 69.8,
+    "price": 52000
+  },
+  {
+    "date": "2026-03-09",
+    "productId": "prod_019",
+    "sold7d": 13500,
+    "velocityWoW": 22.2,
+    "affiliateScore": 70.3,
+    "price": 19000
+  },
+  {
+    "date": "2026-03-09",
+    "productId": "prod_020",
+    "sold7d": 8500,
+    "velocityWoW": 72.7,
+    "affiliateScore": 69.3,
+    "price": 42000
+  },
+  {
+    "date": "2026-03-09",
+    "productId": "prod_021",
+    "sold7d": 66000,
+    "velocityWoW": 37.7,
+    "affiliateScore": 70.2,
+    "price": 5500
+  },
+  {
+    "date": "2026-03-09",
+    "productId": "prod_022",
+    "sold7d": 5500,
+    "velocityWoW": 88.8,
+    "affiliateScore": 68.1,
+    "price": 125000
+  },
+  {
+    "date": "2026-03-09",
+    "productId": "prod_023",
+    "sold7d": 14500,
+    "velocityWoW": 27.4,
+    "affiliateScore": 69.8,
+    "price": 25000
+  },
+  {
+    "date": "2026-03-09",
+    "productId": "prod_024",
+    "sold7d": 25500,
+    "velocityWoW": 67.9,
+    "affiliateScore": 72.5,
+    "price": 45000
+  },
+  {
+    "date": "2026-03-09",
+    "productId": "prod_025",
+    "sold7d": 12000,
+    "velocityWoW": 32.2,
+    "affiliateScore": 70.0,
+    "price": 38000
+  },
+  {
+    "date": "2026-03-10",
+    "productId": "prod_001",
+    "sold7d": 34000,
+    "velocityWoW": 162.9,
+    "affiliateScore": 79.7,
+    "price": 159000
+  },
+  {
+    "date": "2026-03-10",
+    "productId": "prod_002",
+    "sold7d": 82000,
+    "velocityWoW": 98.5,
+    "affiliateScore": 79.3,
+    "price": 3191
+  },
+  {
+    "date": "2026-03-10",
+    "productId": "prod_003",
+    "sold7d": 27000,
+    "velocityWoW": 16.2,
+    "affiliateScore": 77.8,
+    "price": 12000
+  },
+  {
+    "date": "2026-03-10",
+    "productId": "prod_004",
+    "sold7d": 39500,
+    "velocityWoW": 146.8,
+    "affiliateScore": 81.3,
+    "price": 185000
+  },
+  {
+    "date": "2026-03-10",
+    "productId": "prod_005",
+    "sold7d": 18000,
+    "velocityWoW": 173.6,
+    "affiliateScore": 75.3,
+    "price": 45000
+  },
+  {
+    "date": "2026-03-10",
+    "productId": "prod_006",
+    "sold7d": 48000,
+    "velocityWoW": 57.0,
+    "affiliateScore": 77.6,
+    "price": 25000
+  },
+  {
+    "date": "2026-03-10",
+    "productId": "prod_007",
+    "sold7d": 21500,
+    "velocityWoW": 39.9,
+    "affiliateScore": 74.8,
+    "price": 35000
+  },
+  {
+    "date": "2026-03-10",
+    "productId": "prod_008",
+    "sold7d": 30000,
+    "velocityWoW": 119.6,
+    "affiliateScore": 76.9,
+    "price": 89000
+  },
+  {
+    "date": "2026-03-10",
+    "productId": "prod_009",
+    "sold7d": 19000,
+    "velocityWoW": 29.7,
+    "affiliateScore": 76.0,
+    "price": 15000
+  },
+  {
+    "date": "2026-03-10",
+    "productId": "prod_010",
+    "sold7d": 43000,
+    "velocityWoW": 74.9,
+    "affiliateScore": 78.1,
+    "price": 42000
+  },
+  {
+    "date": "2026-03-10",
+    "productId": "prod_011",
+    "sold7d": 15500,
+    "velocityWoW": 28.4,
+    "affiliateScore": 72.4,
+    "price": 18000
+  },
+  {
+    "date": "2026-03-10",
+    "productId": "prod_012",
+    "sold7d": 11500,
+    "velocityWoW": 49.5,
+    "affiliateScore": 72.0,
+    "price": 175000
+  },
+  {
+    "date": "2026-03-10",
+    "productId": "prod_013",
+    "sold7d": 13500,
+    "velocityWoW": 21.6,
+    "affiliateScore": 71.6,
+    "price": 22000
+  },
+  {
+    "date": "2026-03-10",
+    "productId": "prod_014",
+    "sold7d": 23000,
+    "velocityWoW": 34.8,
+    "affiliateScore": 73.7,
+    "price": 55000
+  },
+  {
+    "date": "2026-03-10",
+    "productId": "prod_015",
+    "sold7d": 18500,
+    "velocityWoW": 42.1,
+    "affiliateScore": 72.3,
+    "price": 28000
+  },
+  {
+    "date": "2026-03-10",
+    "productId": "prod_016",
+    "sold7d": 35500,
+    "velocityWoW": 46.5,
+    "affiliateScore": 72.5,
+    "price": 39000
+  },
+  {
+    "date": "2026-03-10",
+    "productId": "prod_017",
+    "sold7d": 63000,
+    "velocityWoW": 33.2,
+    "affiliateScore": 72.1,
+    "price": 8500
+  },
+  {
+    "date": "2026-03-10",
+    "productId": "prod_018",
+    "sold7d": 10500,
+    "velocityWoW": 74.3,
+    "affiliateScore": 70.1,
+    "price": 52000
+  },
+  {
+    "date": "2026-03-10",
+    "productId": "prod_019",
+    "sold7d": 14000,
+    "velocityWoW": 24.3,
+    "affiliateScore": 71.5,
+    "price": 19000
+  },
+  {
+    "date": "2026-03-10",
+    "productId": "prod_020",
+    "sold7d": 9000,
+    "velocityWoW": 84.4,
+    "affiliateScore": 70.4,
+    "price": 42000
+  },
+  {
+    "date": "2026-03-10",
+    "productId": "prod_021",
+    "sold7d": 68000,
+    "velocityWoW": 43.5,
+    "affiliateScore": 71.5,
+    "price": 5500
+  },
+  {
+    "date": "2026-03-10",
+    "productId": "prod_022",
+    "sold7d": 6000,
+    "velocityWoW": 94.8,
+    "affiliateScore": 69.6,
+    "price": 125000
+  },
+  {
+    "date": "2026-03-10",
+    "productId": "prod_023",
+    "sold7d": 16000,
+    "velocityWoW": 25.8,
+    "affiliateScore": 71.3,
+    "price": 25000
+  },
+  {
+    "date": "2026-03-10",
+    "productId": "prod_024",
+    "sold7d": 27000,
+    "velocityWoW": 64.9,
+    "affiliateScore": 72.9,
+    "price": 45000
+  },
+  {
+    "date": "2026-03-10",
+    "productId": "prod_025",
+    "sold7d": 12500,
+    "velocityWoW": 39.9,
+    "affiliateScore": 70.5,
+    "price": 38000
+  },
+  {
+    "date": "2026-03-11",
+    "productId": "prod_001",
+    "sold7d": 35000,
+    "velocityWoW": 171.0,
+    "affiliateScore": 80.7,
+    "price": 159000
+  },
+  {
+    "date": "2026-03-11",
+    "productId": "prod_002",
+    "sold7d": 83850,
+    "velocityWoW": 99.5,
+    "affiliateScore": 80.8,
+    "price": 3191
+  },
+  {
+    "date": "2026-03-11",
+    "productId": "prod_003",
+    "sold7d": 28000,
+    "velocityWoW": 17.4,
+    "affiliateScore": 79.3,
+    "price": 12000
+  },
+  {
+    "date": "2026-03-11",
+    "productId": "prod_004",
+    "sold7d": 42000,
+    "velocityWoW": 145.0,
+    "affiliateScore": 82.5,
+    "price": 185000
+  },
+  {
+    "date": "2026-03-11",
+    "productId": "prod_005",
+    "sold7d": 18500,
+    "velocityWoW": 176.4,
+    "affiliateScore": 76.2,
+    "price": 45000
+  },
+  {
+    "date": "2026-03-11",
+    "productId": "prod_006",
+    "sold7d": 52000,
+    "velocityWoW": 65.0,
+    "affiliateScore": 78.5,
+    "price": 25000
+  },
+  {
+    "date": "2026-03-11",
+    "productId": "prod_007",
+    "sold7d": 22000,
+    "velocityWoW": 45.0,
+    "affiliateScore": 75.8,
+    "price": 35000
+  },
+  {
+    "date": "2026-03-11",
+    "productId": "prod_008",
+    "sold7d": 31000,
+    "velocityWoW": 120.0,
+    "affiliateScore": 77.9,
+    "price": 89000
+  },
+  {
+    "date": "2026-03-11",
+    "productId": "prod_009",
+    "sold7d": 19500,
+    "velocityWoW": 32.0,
+    "affiliateScore": 76.5,
+    "price": 15000
+  },
+  {
+    "date": "2026-03-11",
+    "productId": "prod_010",
+    "sold7d": 45000,
+    "velocityWoW": 88.0,
+    "affiliateScore": 79.1,
+    "price": 42000
+  },
+  {
+    "date": "2026-03-11",
+    "productId": "prod_011",
+    "sold7d": 16500,
+    "velocityWoW": 28.0,
+    "affiliateScore": 73.2,
+    "price": 18000
+  },
+  {
+    "date": "2026-03-11",
+    "productId": "prod_012",
+    "sold7d": 12000,
+    "velocityWoW": 55.0,
+    "affiliateScore": 72.8,
+    "price": 175000
+  },
+  {
+    "date": "2026-03-11",
+    "productId": "prod_013",
+    "sold7d": 14000,
+    "velocityWoW": 22.0,
+    "affiliateScore": 72.0,
+    "price": 22000
+  },
+  {
+    "date": "2026-03-11",
+    "productId": "prod_014",
+    "sold7d": 25000,
+    "velocityWoW": 38.0,
+    "affiliateScore": 74.5,
+    "price": 55000
+  },
+  {
+    "date": "2026-03-11",
+    "productId": "prod_015",
+    "sold7d": 20000,
+    "velocityWoW": 42.0,
+    "affiliateScore": 74.0,
+    "price": 28000
+  },
+  {
+    "date": "2026-03-11",
+    "productId": "prod_016",
+    "sold7d": 38000,
+    "velocityWoW": 52.0,
+    "affiliateScore": 73.8,
+    "price": 39000
+  },
+  {
+    "date": "2026-03-11",
+    "productId": "prod_017",
+    "sold7d": 65000,
+    "velocityWoW": 35.0,
+    "affiliateScore": 73.5,
+    "price": 8500
+  },
+  {
+    "date": "2026-03-11",
+    "productId": "prod_018",
+    "sold7d": 11000,
+    "velocityWoW": 85.0,
+    "affiliateScore": 71.5,
+    "price": 52000
+  },
+  {
+    "date": "2026-03-11",
+    "productId": "prod_019",
+    "sold7d": 15000,
+    "velocityWoW": 25.0,
+    "affiliateScore": 73.0,
+    "price": 19000
+  },
+  {
+    "date": "2026-03-11",
+    "productId": "prod_020",
+    "sold7d": 9500,
+    "velocityWoW": 92.0,
+    "affiliateScore": 71.0,
+    "price": 42000
+  },
+  {
+    "date": "2026-03-11",
+    "productId": "prod_021",
+    "sold7d": 72000,
+    "velocityWoW": 48.0,
+    "affiliateScore": 72.5,
+    "price": 5500
+  },
+  {
+    "date": "2026-03-11",
+    "productId": "prod_022",
+    "sold7d": 6500,
+    "velocityWoW": 110.0,
+    "affiliateScore": 70.5,
+    "price": 125000
+  },
+  {
+    "date": "2026-03-11",
+    "productId": "prod_023",
+    "sold7d": 17000,
+    "velocityWoW": 30.0,
+    "affiliateScore": 72.0,
+    "price": 25000
+  },
+  {
+    "date": "2026-03-11",
+    "productId": "prod_024",
+    "sold7d": 28000,
+    "velocityWoW": 75.0,
+    "affiliateScore": 74.2,
+    "price": 45000
+  },
+  {
+    "date": "2026-03-11",
+    "productId": "prod_025",
+    "sold7d": 13000,
+    "velocityWoW": 40.0,
+    "affiliateScore": 71.8,
+    "price": 38000
+  }
+]
